@@ -6,7 +6,7 @@
 /*   By: osancak <osancak@student.42istanbul.com.tr +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 19:03:42 by osancak           #+#    #+#             */
-/*   Updated: 2025/06/17 05:30:46 by osancak          ###   ########.fr       */
+/*   Updated: 2025/06/17 09:47:33 by osancak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,10 @@ static char	*ft_read(int fd, char *buff)
 	while (byte > 0 && !ft_strchr(buff, '\n'))
 	{
 		byte = read(fd, tmp, BUFFER_SIZE);
-		if (byte <= 0)
-		{
-			if (byte == -1)
-				return (free(tmp), free(buff), NULL);
+		if (byte == 0)
 			break ;
-		}
+		if (byte == -1)
+			return (free(tmp), free(buff), NULL);
 		tmp[byte] = '\0';
 		buff = ft_strjoin(buff, tmp);
 	}
