@@ -1,0 +1,9 @@
+.vscode/
+obj/
+*out
+*swp
+*gch
+kurek*
+main*
+*.a
+*.o
