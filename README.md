@@ -1,6 +1,6 @@
 # get_next_line
 
-Bu proje, bir dosya tanımlayıcısından satır satır okuma işlemini gerçekleştiren `get_next_line` fonksiyonunun C dilinde implementasyonudur. 42 okullarında sıklıkla verilen bir projedir.
+Bu proje, bir dosya tanımlayıcısından satır satır okuma işlemini gerçekleştiren `get_next_line` fonksiyonunun C dilinde implementasyonudur. Proje *École 42*  kapsamında geliştirilmiştir.
 
 ## Dosya Yapısı
 
